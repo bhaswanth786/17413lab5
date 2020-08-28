@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Validation</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <form id="mainform">
+                <label for="textbox1">Name:</label><br>
+                <input required class="textbox" id="name" type="text" placeholder="Enter your name"/>
+                <br>
+                <br>
+                <label for="textbox1">Your email:</label><br>
+                <input required class="textbox" id="email" type="text" placeholder="Enter your email"/>
+                <br>
+                <br>
+                <label for="textbox2">Your phone:</label><br>
+                <input required class="textbox" id="phone" type="text" placeholder="Enter your phone no."/>
+                <br>
+                <br>
+                
+                <label>Gender:</label><br>
+                <input required type="radio" id="male" name="gender" value="male" />
+                <label for="male">Male</label>
+                <input required type="radio" id="female" name="gender" value="female" />
+                <label for="female">Female</label>
+                <input required type="radio" id="other" name="gender" value="other" />
+                <label for="other">Other</label>
+                <br>
+                <br>
+
+                <label for="state">Choose a State:</label>
+                <select required name="state" id="state" form="state">
+                    <option value="default">Select State</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                    <option value="Daman and Diu">Daman and Diu</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Lakshadweep">Lakshadweep</option>
+                    <option value="Puducherry">Puducherry</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                </select>
+                <br>
+                <br>
+                <input required type="checkbox" id="check" name="check" value="check"/>
+                <label for="vehicle1"> Please accept the terms and conditions.</label><br />
+                <br>
+                <br>
+                <button type="submit" form="mainform" value="Submit">Submit</button>
+                <button type="reset" form="mainform" value="reset">Reset</button>
+            </form>
+        </main>
+    </body>
+</html>
+
