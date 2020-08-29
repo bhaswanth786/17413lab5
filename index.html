@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript Form Validation using a sample registration form</title>
+        <meta name="keywords" content="example, JavaScript Form Validation, Sample registration form" />
+        <meta name="description" content="This document is an example of JavaScript Form Validation using a sample registration form. " />
+        <link rel='stylesheet' href='style.css' type='text/css' />
+        <script src="script.js"></script>
+    </head>
+    <body onload="document.registration.username.focus();">
+        <h1>Registration Form</h1>
+            <form name='registration' onSubmit="return formValidation();">
+                <ul>
+                    <li><label for="username">Name:</label></li>
+                    <li><input type="text" name="username" size="50" placeholder="Enter your name"/></li>
+
+                    <li><label for="passid">Password:</label></li>
+                    <li><input type="password" name="passid" size="50" placeholder="Enter your password with alphabets"/></li>
+
+                    <li><label for="country">Country:</label></li>
+                    <li>
+                        <select name="country">
+                            <option selected="" value="Default">Please select a state</option>
+                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                            <option value="Assam">Assam</option>
+                            <option value="Bihar">Bihar</option>
+                            <option value="Chandigarh">Chandigarh</option>
+                            <option value="Chhattisgarh">Chhattisgarh</option>
+                            <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                            <option value="Daman and Diu">Daman and Diu</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Lakshadweep">Lakshadweep</option>
+                            <option value="Puducherry">Puducherry</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Haryana">Haryana</option>
+                            <option value="Himachal Pradesh">Himachal Pradesh</option>
+                            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                            <option value="Jharkhand">Jharkhand</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Madhya Pradesh">Madhya Pradesh</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Manipur">Manipur</option>
+                            <option value="Meghalaya">Meghalaya</option>
+                            <option value="Mizoram">Mizoram</option>
+                            <option value="Nagaland">Nagaland</option>
+                            <option value="Odisha">Odisha</option>
+                            <option value="Punjab">Punjab</option>
+                            <option value="Rajasthan">Rajasthan</option>
+                            <option value="Sikkim">Sikkim</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+                            <option value="Telangana">Telangana</option>
+                            <option value="Tripura">Tripura</option>
+                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+                            <option value="Uttarakhand">Uttarakhand</option>
+                            <option value="West Bengal">West Bengal</option>
+                        </select>
+                    </li>
+
+                    <li><label for="zip">Phone:</label></li>
+                    <li><input type="text" name="zip" placeholder="Enter your mobile number with size 10"/></li>
+
+                    <li><label for="email">Email:</label></li>
+                    <li><input type="text" name="email" size="50" /></li>
+
+                    <li><label id="gender">Gender:</label></li>
+                    <li><input type="radio" name="msex" value="Male" /><span>Male</span></li>
+                    <li><input type="radio" name="fsex" value="Female" /><span>Female</span></li>
+
+                    <li><label>Check:</label></li>
+                    <li><input type="checkbox" name="check" value="en"/><span>Accept the terms and conditions.</span></li>
+                    
+                    <li><input type="submit" name="submit" value="Submit" /></li>
+                </ul>
+            </form>
+    </body>
+</html>
